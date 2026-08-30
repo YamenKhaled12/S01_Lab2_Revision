@@ -1,0 +1,15 @@
+﻿<a asp-controller="ZombieType"
+   asp-action="Create"
+   class="btn btn-primary">
+    Create New Type
+</a>
+<div class="container p-3">
+    <div class="row">
+        @foreach (var item in this.ViewBag.MaListe)
+        {
+            <div>
+                <h3>@item.TypeName</h3>
+            </div>
+        }
+    </div>
+</div>
